@@ -8,8 +8,8 @@ function Item({itemInfo, removeItem}) {
 
   return (
     <li className="item">
-      {itemInfo.name} - {itemInfo.id} 
-      <button onClick={hanldeClick} >Delete</button>
+      {`${itemInfo.name} `}
+      <button onClick={hanldeClick}>Delete</button>
     </li>
   )
 }

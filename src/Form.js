@@ -19,8 +19,8 @@ function Form({addItem}) {
 
   return (
     <form id="main-form" onSubmit={handleSubmit}>
-      <label htmlFor="item">Item name</label>
-      <input type="text" name="item" value={value} onChange={handleChange}/>
+      <label htmlFor="item">Item name </label>
+      <input type="text" id="item" name="item" value={value} onChange={handleChange}/>
       <input type="submit" value="Submit" />
     </form>
   )

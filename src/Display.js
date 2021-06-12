@@ -6,9 +6,9 @@ function Display({items, removeItem}) {
   }
 
   return(
-    <ul className="items">
-      {items.length === 0? <h1>No items listed</h1> : renderItems(items)}
-    </ul>
+    <>
+      {items.length === 0 ? <h1>No items listed</h1> : <ul className="items"> {renderItems(items)} </ul>}
+    </>
   )
 }
 
