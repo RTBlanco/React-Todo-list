@@ -6,9 +6,7 @@ function Form({addItem}) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let form = new FormData(e.currentTarget);
-    // debugger
-    addItem(form.get('item'));
+    addItem(value);
     setValue('')
     console.log('item was added')
   }
